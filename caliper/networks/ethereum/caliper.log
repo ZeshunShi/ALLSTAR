@@ -1,0 +1,4 @@
+2020.03.11-22:07:27.557[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2020.03.11-22:07:27.784[33m warn [39m [caliper] [bind] 	Working directory for binding not specified. Using "/Users/zeshunshi/Downloads/MSc-thesis-master/caliper/networks/ethereum"
+2020.03.11-22:07:27.787[32m info [39m [caliper] [bind] 	Binding working directory: /Users/zeshunshi/Downloads/MSc-thesis-master/caliper/networks/ethereum
+2020.03.11-22:07:27.787[32m info [39m [caliper] [bind] 	Calling npm with: install sawtooth-sdk@1.0.0

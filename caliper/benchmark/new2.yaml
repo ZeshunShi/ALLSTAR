@@ -1,0 +1,70 @@
+---
+test:
+  name: simple
+  clients:
+    type: local
+    number: 1
+  rounds:
+  - label: open # Account opening benchmark configuration
+    txNumber:
+    - 100
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 100
+    arguments:
+      money: 1000
+    callback: benchmark/open.js
+  - label: query # Account querying benchmark configuration
+    txNumber:
+    - 100
+    - 100
+    - 100
+    - 100
+    - 100
+    - 100
+    - 100
+    - 100
+    - 100
+    - 100
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    - type: fixed-rate
+      opts:
+        tps: 300
+    arguments:
+        money: 1000
+    callback: benchmark/query.js
+monitor:
+  type:
+  - docker
+  docker:
+    name:
+    - all
+  interval: 1

@@ -1,0 +1,42 @@
+---
+test:
+  name: simple
+  clients:
+    type: local
+    number: 1
+  rounds:
+  - label: open # Account opening benchmark configuration
+    txNumber:
+    - 100 
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 100 # Use values 10, 20, 50, 100
+    arguments:
+      money: 1000 # Initial account balance
+    callback: benchmark/open.js
+  - label: query # Account querying benchmark configuration
+    txNumber:
+    - 100
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 100 # Use values 10, 20, 50, 100
+    callback: benchmark/query.js
+  - label: transfer # Asset transfer benchmark configuration
+    txNumber:
+        - 100
+    rateControl:
+        - type: fixed-rate
+          opts:
+              tps: 10 # Use values 10, 20, 50, 100
+    arguments:
+        money: 10 # Amount of assets to transfer
+    callback: benchmark/transfer.js
+monitor:
+  type:
+  - docker
+  docker:
+    name:
+    - all
+  interval: 1

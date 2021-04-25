@@ -1,0 +1,40 @@
+{
+  "name": "caliper",
+  "version": "1.0.0",
+  "description": "Blockchain performance benchmarks.",
+  "main": "index.js",
+  "dependencies": {
+    "@hyperledger/caliper-cli": "^0.2.0",
+    "@monax/burrow": "^0.23.0",
+    "fabric-ca-client": "^1.4.0",
+    "fabric-client": "^1.4.0",
+    "fabric-network": "^1.4.0",
+    "fabric-protos": "^2.0.0-snapshot.1",
+    "grpc": "^1.14.2",
+    "iroha-helpers": "^0.6.3",
+    "sawtooth-sdk": "^1.0.0",
+    "web3": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UrbancokDavid/MSc-thesis.git"
+  },
+  "keywords": [
+    "blockchain",
+    "performance",
+    "besu",
+    "ethereum",
+    "fabric",
+    "iroha"
+  ],
+  "author": "David Urbancok",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/UrbancokDavid/MSc-thesis/issues"
+  },
+  "homepage": "https://github.com/UrbancokDavid/MSc-thesis#readme"
+}

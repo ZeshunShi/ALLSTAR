@@ -1,0 +1,4 @@
+2020.03.28-14:19:32.254[90m debug[39m [caliper] [local-client.js] 	Constructed a winston logger with the specified settings
+2020.03.28-14:19:32.655[33m warn [39m [caliper] [bind] 	Working directory for binding not specified. Using "/Users/zeshunshi/Downloads/MSc-thesis-master/caliper/benchmark"
+2020.03.28-14:19:32.658[32m info [39m [caliper] [bind] 	Binding working directory: /Users/zeshunshi/Downloads/MSc-thesis-master/caliper/benchmark
+2020.03.28-14:19:32.659[32m info [39m [caliper] [bind] 	Calling npm with: install iroha-helpers@0.6.3
