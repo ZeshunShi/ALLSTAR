@@ -1,0 +1,1020 @@
+<!doctype html>
+<html>
+<head>
+    <title>Caliper Report</title>
+    <meta charset="UTF-8"/>
+    <style type="text/css">
+        .left-column {
+            position: fixed;
+            width:20%;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+        }
+        .right-column {
+            margin-left: 22%;
+            width:60%;
+        }
+        .left-column ul,h2 {
+            display: block;
+            margin: 10px;
+            padding: 0;
+            list-style: none;
+        }
+        .left-column ul{
+            border-top: 1px solid #d9d9d9;
+            font-size: 14px;
+        }
+        .left-column li{
+            margin-bottom: 5px;
+            color: #5e6b73;
+        }
+        .left-column h3 {
+            border-left: 5px solid #009a61;
+        }
+        .right-column>div {
+            border-top: 1px solid #d9d9d9;
+        }
+        .right-column table {
+            font-family: verdana,arial,sans-serif;
+            font-size:11px;
+            color:#333333;
+            border-width: 1px;
+            border-color: #666666;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .right-column th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #f2f2f2;
+        }
+        .right-column td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+        }
+        .tag {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            background-color: rgba(1,126,102,0.08);
+            font-family: verdana,arial,sans-serif;
+            font-size:11px;
+            color: #017E66;
+            text-align: center;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+        }
+        pre {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            overflow:auto;
+            max-height:300px;
+            font-size:12px;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div class="left-column">
+        <h2>Caliper Report</h2>
+        <ul>
+            <h3>&nbspBasic information</h3>
+            <li><strong>DLT: &nbsp</strong><span>iroha</span></li>
+            <li><strong>Benchmark: &nbsp</strong><span>simple</span></li>
+            <li><strong>Description: &nbsp</strong><span></span></li>
+            <li><strong>Test Rounds: &nbsp</strong><span>20</span></li>
+            <li><a href="#benchmarkInfo">Details</a></li>
+        </ul>
+        <ul>
+            <h3>&nbspBenchmark results</h3>
+            <li><a href="#benchmarksummary">Summary</a></li>
+                <li><a href="#open">open</a></li>
+                <li><a href="#query">query</a></li>
+        </ul>
+        <ul>
+            <h3>&nbspSystem Under Test</h3>
+            <li><strong>Version: &nbsp</strong><span>1.0.0_rc5</span></li>
+            <li><strong>Size: &nbsp</strong><span>2 Peers</span></li>
+            <li><strong>Distribution: &nbsp</strong><span>Single Host</span></li>
+            <li><a href="#sutdetails">Details</a></li>
+        </ul>
+    </div>
+
+    <div class="right-column">
+        <div id="benchmarksummary">
+            <table>
+                <h3>Summary</h3>
+                <tr>
+                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                </tr>
+
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>10.1</td> <td>5.77</td> <td>0.17</td> <td>2.00</td> <td>9.1</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>20.2</td> <td>6.15</td> <td>2.71</td> <td>4.33</td> <td>13.1</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>30.3</td> <td>7.75</td> <td>3.30</td> <td>5.91</td> <td>12.9</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>40.4</td> <td>5.16</td> <td>3.47</td> <td>4.39</td> <td>15.0</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>50.5</td> <td>8.79</td> <td>4.31</td> <td>7.49</td> <td>11.3</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>60.6</td> <td>28.45</td> <td>13.46</td> <td>19.47</td> <td>3.5</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>70.8</td> <td>8.67</td> <td>4.62</td> <td>7.66</td> <td>11.5</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>80.8</td> <td>7.69</td> <td>4.90</td> <td>6.87</td> <td>13.0</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>91.0</td> <td>4.95</td> <td>3.60</td> <td>4.18</td> <td>17.0</td>
+                </tr>
+                <tr>
+                     <td>open</td> <td>100</td> <td>0</td> <td>100.8</td> <td>6.55</td> <td>5.54</td> <td>6.04</td> <td>15.3</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>20.2</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>20.2</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>40.4</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>40.2</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>60.6</td> <td>0.03</td> <td>0.01</td> <td>0.01</td> <td>60.3</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>80.7</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>80.3</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>100.9</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>99.9</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>121.1</td> <td>0.03</td> <td>0.01</td> <td>0.01</td> <td>119.9</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>141.2</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>139.3</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>162.9</td> <td>0.09</td> <td>0.01</td> <td>0.02</td> <td>160.5</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>183.2</td> <td>0.03</td> <td>0.01</td> <td>0.01</td> <td>179.9</td>
+                </tr>
+                <tr>
+                     <td>query</td> <td>100</td> <td>0</td> <td>202.8</td> <td>0.06</td> <td>0.01</td> <td>0.02</td> <td>197.6</td>
+                </tr>
+            </table>
+        </div>
+        <div id="open">
+            <h3>open</h3>
+            <p></p>
+                <h3>round 0</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>10.1</td> <td>5.77</td> <td>0.17</td> <td>2.00</td> <td>9.1</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>7.8MB</td> <td>6.1MB</td> <td>16.75</td> <td>6.75</td> <td>337.2KB</td> <td>435.9KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>12.1MB</td> <td>8.3MB</td> <td>24.38</td> <td>9.86</td> <td>384.2KB</td> <td>596.8KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>106.3MB</td> <td>105.6MB</td> <td>7.64</td> <td>2.92</td> <td>355.3KB</td> <td>174.5KB</td> <td>0B</td> <td>328.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>106.4MB</td> <td>105.7MB</td> <td>6.12</td> <td>2.14</td> <td>327.1KB</td> <td>160.4KB</td> <td>0B</td> <td>328.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 1</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>20.2</td> <td>6.15</td> <td>2.71</td> <td>4.33</td> <td>13.1</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>19.2MB</td> <td>13.0MB</td> <td>27.72</td> <td>17.07</td> <td>202.8KB</td> <td>337.3KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>13.1MB</td> <td>12.0MB</td> <td>13.81</td> <td>5.51</td> <td>109.0KB</td> <td>152.7KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>106.7MB</td> <td>106.4MB</td> <td>10.52</td> <td>3.16</td> <td>141.9KB</td> <td>58.2KB</td> <td>0B</td> <td>144.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>106.8MB</td> <td>106.5MB</td> <td>12.64</td> <td>5.32</td> <td>238.1KB</td> <td>106.6KB</td> <td>0B</td> <td>144.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 2</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>30.3</td> <td>7.75</td> <td>3.30</td> <td>5.91</td> <td>12.9</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>25.5MB</td> <td>22.6MB</td> <td>43.41</td> <td>18.98</td> <td>256.8KB</td> <td>531.8KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>15.3MB</td> <td>13.7MB</td> <td>28.19</td> <td>9.41</td> <td>263.8KB</td> <td>310.4KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>108.2MB</td> <td>107.4MB</td> <td>23.31</td> <td>5.60</td> <td>286.0KB</td> <td>125.8KB</td> <td>0B</td> <td>264.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>108.3MB</td> <td>107.5MB</td> <td>21.29</td> <td>6.52</td> <td>335.1KB</td> <td>150.8KB</td> <td>0B</td> <td>264.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 3</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>40.4</td> <td>5.16</td> <td>3.47</td> <td>4.39</td> <td>15.0</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>26.0MB</td> <td>25.1MB</td> <td>26.73</td> <td>9.69</td> <td>240.3KB</td> <td>351.4KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>20.4MB</td> <td>18.9MB</td> <td>23.60</td> <td>8.84</td> <td>291.7KB</td> <td>447.5KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>109.3MB</td> <td>108.8MB</td> <td>5.77</td> <td>2.73</td> <td>257.3KB</td> <td>116.9KB</td> <td>0B</td> <td>216.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>109.4MB</td> <td>108.9MB</td> <td>8.85</td> <td>3.83</td> <td>272.3KB</td> <td>121.3KB</td> <td>0B</td> <td>240.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 4</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>50.5</td> <td>8.79</td> <td>4.31</td> <td>7.49</td> <td>11.3</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>28.0MB</td> <td>26.5MB</td> <td>24.23</td> <td>11.39</td> <td>225.0KB</td> <td>300.0KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>24.0MB</td> <td>22.1MB</td> <td>27.89</td> <td>12.97</td> <td>266.4KB</td> <td>411.3KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>109.5MB</td> <td>109.3MB</td> <td>19.97</td> <td>5.71</td> <td>260.7KB</td> <td>125.9KB</td> <td>0B</td> <td>152.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>109.6MB</td> <td>109.4MB</td> <td>20.27</td> <td>5.78</td> <td>242.0KB</td> <td>115.0KB</td> <td>0B</td> <td>152.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 5</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>60.6</td> <td>28.45</td> <td>13.46</td> <td>19.47</td> <td>3.5</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>27.6MB</td> <td>27.5MB</td> <td>16.21</td> <td>2.82</td> <td>231.0KB</td> <td>323.6KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>27.6MB</td> <td>25.7MB</td> <td>26.94</td> <td>5.84</td> <td>334.8KB</td> <td>532.0KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>110.0MB</td> <td>109.9MB</td> <td>6.67</td> <td>1.57</td> <td>370.6KB</td> <td>189.4KB</td> <td>0B</td> <td>288.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>110.1MB</td> <td>109.9MB</td> <td>8.32</td> <td>1.12</td> <td>263.2KB</td> <td>130.7KB</td> <td>0B</td> <td>288.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 6</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>70.8</td> <td>8.67</td> <td>4.62</td> <td>7.66</td> <td>11.5</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>29.3MB</td> <td>28.4MB</td> <td>20.27</td> <td>8.58</td> <td>175.9KB</td> <td>186.5KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.4MB</td> <td>27.1MB</td> <td>23.42</td> <td>9.97</td> <td>229.8KB</td> <td>311.2KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>110.7MB</td> <td>110.7MB</td> <td>5.85</td> <td>2.40</td> <td>126.8KB</td> <td>65.5KB</td> <td>0B</td> <td>64.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>110.7MB</td> <td>110.7MB</td> <td>5.65</td> <td>2.69</td> <td>124.2KB</td> <td>64.4KB</td> <td>0B</td> <td>64.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 7</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>80.8</td> <td>7.69</td> <td>4.90</td> <td>6.87</td> <td>13.0</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>29.6MB</td> <td>29.3MB</td> <td>13.10</td> <td>5.94</td> <td>150.2KB</td> <td>106.8KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>30.2MB</td> <td>28.8MB</td> <td>15.21</td> <td>7.13</td> <td>159.5KB</td> <td>240.9KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>110.8MB</td> <td>110.8MB</td> <td>3.27</td> <td>1.64</td> <td>95.9KB</td> <td>50.7KB</td> <td>0B</td> <td>40.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>110.9MB</td> <td>110.9MB</td> <td>4.11</td> <td>1.80</td> <td>75.4KB</td> <td>39.4KB</td> <td>0B</td> <td>40.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 8</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>91.0</td> <td>4.95</td> <td>3.60</td> <td>4.18</td> <td>17.0</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>33.6MB</td> <td>31.4MB</td> <td>17.18</td> <td>7.24</td> <td>202.2KB</td> <td>359.5KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.4MB</td> <td>27.0MB</td> <td>14.28</td> <td>4.99</td> <td>195.4KB</td> <td>197.5KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>111.4MB</td> <td>111.3MB</td> <td>14.27</td> <td>4.97</td> <td>166.9KB</td> <td>76.7KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>111.5MB</td> <td>111.4MB</td> <td>12.84</td> <td>4.42</td> <td>198.4KB</td> <td>94.0KB</td> <td>0B</td> <td>88.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 9</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>open</td> <td>100</td> <td>0</td> <td>100.8</td> <td>6.55</td> <td>5.54</td> <td>6.04</td> <td>15.3</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>32.9MB</td> <td>32.4MB</td> <td>28.52</td> <td>12.32</td> <td>40.3KB</td> <td>120.4KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>29.7MB</td> <td>29.4MB</td> <td>19.49</td> <td>9.54</td> <td>92.8KB</td> <td>118.5KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>111.5MB</td> <td>111.5MB</td> <td>10.01</td> <td>5.25</td> <td>96.2KB</td> <td>42.6KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>111.8MB</td> <td>111.7MB</td> <td>12.45</td> <td>6.40</td> <td>108.9KB</td> <td>48.2KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+        </div>
+        <div id="query">
+            <h3>query</h3>
+            <p></p>
+                <h3>round 0</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>20.2</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>20.2</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>30.4MB</td> <td>30.4MB</td> <td>0.04</td> <td>0.03</td> <td>2.5KB</td> <td>2.5KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>29.0MB</td> <td>29.0MB</td> <td>3.17</td> <td>2.11</td> <td>95.4KB</td> <td>215.1KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>112.3MB</td> <td>112.2MB</td> <td>4.37</td> <td>2.92</td> <td>195.0KB</td> <td>54.7KB</td> <td>0B</td> <td>404.0KB</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>112.4MB</td> <td>112.3MB</td> <td>0.03</td> <td>0.03</td> <td>904B</td> <td>1020B</td> <td>0B</td> <td>404.0KB</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 1</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>40.4</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>40.2</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>30.3MB</td> <td>30.3MB</td> <td>0.72</td> <td>0.38</td> <td>1.4KB</td> <td>1.2KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>29.0MB</td> <td>29.0MB</td> <td>7.13</td> <td>3.57</td> <td>61.9KB</td> <td>141.9KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>112.3MB</td> <td>112.3MB</td> <td>8.08</td> <td>4.06</td> <td>128.6KB</td> <td>37.6KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>112.4MB</td> <td>112.4MB</td> <td>0.11</td> <td>0.07</td> <td>452B</td> <td>510B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 2</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>60.6</td> <td>0.03</td> <td>0.01</td> <td>0.01</td> <td>60.3</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>30.1MB</td> <td>30.1MB</td> <td>0.64</td> <td>0.57</td> <td>1.2KB</td> <td>1.2KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.9MB</td> <td>28.9MB</td> <td>11.97</td> <td>5.99</td> <td>79.0KB</td> <td>181.7KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>112.3MB</td> <td>112.3MB</td> <td>14.53</td> <td>7.31</td> <td>171.6KB</td> <td>50.2KB</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>112.4MB</td> <td>112.4MB</td> <td>0.10</td> <td>0.05</td> <td>452B</td> <td>510B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 3</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>80.7</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>80.3</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>30.1MB</td> <td>30.1MB</td> <td>0.56</td> <td>0.56</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.9MB</td> <td>28.9MB</td> <td>0.88</td> <td>0.88</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>112.3MB</td> <td>112.3MB</td> <td>0.08</td> <td>0.08</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>112.4MB</td> <td>112.4MB</td> <td>0.09</td> <td>0.09</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 4</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>100.9</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>99.9</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>28.0MB</td> <td>28.0MB</td> <td>0.76</td> <td>0.76</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>29.0MB</td> <td>29.0MB</td> <td>0.99</td> <td>0.99</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>112.3MB</td> <td>112.3MB</td> <td>0.07</td> <td>0.07</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>113.0MB</td> <td>113.0MB</td> <td>0.11</td> <td>0.11</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 5</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>121.1</td> <td>0.03</td> <td>0.01</td> <td>0.01</td> <td>119.9</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>27.9MB</td> <td>27.9MB</td> <td>0.01</td> <td>0.01</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.8MB</td> <td>28.8MB</td> <td>0.01</td> <td>0.01</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>113.0MB</td> <td>113.0MB</td> <td>0.01</td> <td>0.01</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>112.9MB</td> <td>112.9MB</td> <td>0.00</td> <td>0.00</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 6</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>141.2</td> <td>0.02</td> <td>0.01</td> <td>0.01</td> <td>139.3</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>27.8MB</td> <td>27.8MB</td> <td>16.17</td> <td>16.17</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.8MB</td> <td>28.8MB</td> <td>0.78</td> <td>0.78</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>113.0MB</td> <td>113.0MB</td> <td>0.11</td> <td>0.11</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>113.1MB</td> <td>113.1MB</td> <td>21.27</td> <td>21.27</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 7</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>162.9</td> <td>0.09</td> <td>0.01</td> <td>0.02</td> <td>160.5</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>27.8MB</td> <td>27.8MB</td> <td>0.03</td> <td>0.03</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.9MB</td> <td>28.9MB</td> <td>3.47</td> <td>3.47</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>113.8MB</td> <td>113.8MB</td> <td>8.04</td> <td>8.04</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>113.1MB</td> <td>113.1MB</td> <td>0.00</td> <td>0.00</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 8</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>183.2</td> <td>0.03</td> <td>0.01</td> <td>0.01</td> <td>179.9</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>28.0MB</td> <td>28.0MB</td> <td>0.02</td> <td>0.02</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.8MB</td> <td>28.8MB</td> <td>0.01</td> <td>0.01</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>113.7MB</td> <td>113.7MB</td> <td>0.01</td> <td>0.01</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>113.2MB</td> <td>113.2MB</td> <td>0.00</td> <td>0.00</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+                <h3>round 9</h3>
+                <strong class="tag">Performance metrics</strong>
+                <table>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+                    <tr>
+                         <td>query</td> <td>100</td> <td>0</td> <td>202.8</td> <td>0.06</td> <td>0.01</td> <td>0.02</td> <td>197.6</td>
+                    </tr>
+                </table>
+                <strong class="tag">Resource consumption</strong>
+                <table>
+                    <tr>
+                    <table>
+                        <tr>
+                             <th>Type</th> <th>Name</th> <th>Memory(max)</th> <th>Memory(avg)</th> <th>CPU% (max)</th> <th>CPU% (avg)</th> <th>Traffic In</th> <th>Traffic Out</th> <th>Disc Read</th> <th>Disc Write</th>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node0</td> <td>27.9MB</td> <td>27.9MB</td> <td>0.03</td> <td>0.03</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_node1</td> <td>28.8MB</td> <td>28.8MB</td> <td>0.03</td> <td>0.03</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg1</td> <td>113.7MB</td> <td>113.7MB</td> <td>0.00</td> <td>0.00</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                        <tr>
+                             <td>Docker</td> <td>iroha_pg0</td> <td>113.5MB</td> <td>113.5MB</td> <td>0.00</td> <td>0.00</td> <td>0B</td> <td>0B</td> <td>0B</td> <td>0B</td>
+                        </tr>
+                    </table>
+                    </tr>
+                </table>
+        </div>
+        <div>
+            <h3>Test Environment</h3>
+            <strong class="tag">benchmark config</strong>
+            <pre id="benchmarkInfo" style="overflow: visible;white-space: pre-wrap;max-height:100%;">{
+  &quot;name&quot;: &quot;simple&quot;,
+  &quot;clients&quot;: {
+    &quot;type&quot;: &quot;local&quot;,
+    &quot;number&quot;: 1
+  },
+  &quot;rounds&quot;: [
+    {
+      &quot;label&quot;: &quot;open&quot;,
+      &quot;txNumber&quot;: [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      &quot;rateControl&quot;: [
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 10
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 20
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 30
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 40
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 50
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 60
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 70
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 80
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 90
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 100
+          }
+        }
+      ],
+      &quot;arguments&quot;: {
+        &quot;money&quot;: 1000
+      },
+      &quot;callback&quot;: &quot;benchmark&#x2F;open.js&quot;
+    },
+    {
+      &quot;label&quot;: &quot;query&quot;,
+      &quot;txNumber&quot;: [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      &quot;rateControl&quot;: [
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 20
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 40
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 60
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 80
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 100
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 120
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 140
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 160
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 180
+          }
+        },
+        {
+          &quot;type&quot;: &quot;fixed-rate&quot;,
+          &quot;opts&quot;: {
+            &quot;tps&quot;: 200
+          }
+        }
+      ],
+      &quot;arguments&quot;: {
+        &quot;money&quot;: 1000
+      },
+      &quot;callback&quot;: &quot;benchmark&#x2F;query.js&quot;
+    }
+  ]
+}</pre>
+            <strong class="tag">SUT</strong>
+            <pre id="sutdetails">not provided</pre>
+        </div>
+    </div>
+
+
+</main>
+
+</body>
+</html>
